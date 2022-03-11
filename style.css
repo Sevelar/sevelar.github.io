@@ -37,18 +37,19 @@ b {
 
 #personal {
     flex-basis: 100%; 
-    background: url('./images/background.png') no-repeat center top fixed;
+    background: url('./images/new-background.png') no-repeat center top fixed;
     background-size: cover;
     height: auto;
+    backdrop-filter: blur(10px);
 }
 
-#personal > img {
+.avatar {
     width: 130px;
     height: 130px;
 }
 
 #personal > .paragraph {
-    color: rgba(255, 255, 255, 0.517);
+    color: rgba(255, 255, 255, 0.71);
 }
 
 .wrapper {
@@ -175,7 +176,7 @@ b {
         height: 200px;
     }
 
-    #personal > img {
+    .avatar {
         width: 200px;
         height: 200px;
     }
