@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .custom-text-shadow {
+    text-shadow: 0 2px 5px var(--tw-shadow-color);
+  }
+
+  .custom-text-shadow:hover {
+    text-shadow: 0 2px 5px var(--tw-shadow-color);
+  }
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("../public/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("../public/fonts/Nunito-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Saira;
+  src: url("../public/fonts/Saira-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  color-scheme: dark;
+}
