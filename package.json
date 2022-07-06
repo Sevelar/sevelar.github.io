@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Sevelar/sevelar.github.io/issues"
   },
-  "homepage": "https://github.com/Sevelar/sevelar.github.io#readme",
+  "homepage": "https://sevelar.github.io",
   "dependencies": {
     "gh-pages": "^4.0.0"
   },
