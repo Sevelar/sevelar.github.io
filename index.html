@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
-    <title>@SevDev</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/img/favicon.ico" type="image/x-icon">
+    <title>@ Sevelar - Portfolio</title>
 </head>
 <body>
-    <div class="main">
-        <div style="flex-basis: 50%; background-color: #272e4a;">
-            <div class="wrapper">
-                <img src="images/discord-previewer.png" alt="discord-previewer" class="logo">
-                <h1 class="heading">Discord Previewer</h1>
-                <h2 id="legacy">DisViewer Legacy</h2>
-                <p class="paragraph">
-                    Discord Previewer is a live-preview markdown text editor, made in Node.js and Electron. It supports features like custom avatars, custom nicknames and role colors. Abandoned and to be replaced with DisViewer.
-                </p>
-                <a href="https://github.com/Sevelar/Discord-Previewer" class="github">
-                    <img src="images/github.png" alt="github">
-                </a>
+    <div class="bg-background bg-center bg-cover lg:bg-[length:100%] lg:bg-fixed h-full">
+        <div class="bg-darkmask bg-fixed h-full">
+            <div class="flex-row h-14 w-full hidden lg:flex justify-center items-center gap-28 fixed top-0 font-saira">
+                <a href="#home" class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Home</a>
+                <a href="#introduction" class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Introduction</a>
+                <a href="#projects" class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Projects</a>
+                <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Socials</span>
             </div>
-            
-        </div>
-        <div style="flex-basis: 50%; background-color: #39446d;">
-            <div class="wrapper">
-                <img src="images/disviewer.png" alt="disviewer" class="logo">
-                <h1 class="heading">DisViewer</h1>
-                <p class="paragraph">
-                    DisViewer is a reloaded version of its predecessor - Discord Previewer. Instead of using the pure JavaScript, DisViewer is being made with a help of React.js. Made from scratch, featuring completely refreshed CSS and design! Currently in development.
+
+            <section class="h-screen flex flex-col items-center justify-around lg:pt-12 pb-12">
+                <p class="text-4xl lg:text-5xl">
+                    Sebastian Wróbel
+                    <a class="relative block top-[-250px] invisible" id="home"></a>
                 </p>
-                <a href="https://github.com/Sevelar/DisViewer" class="github">
-                    <img src="images/github.png" alt="github">
-                </a>
-            </div>
-        </div>
-        <div class="wrapper" id="personal">
-            <!-- <img src="https://avatars1.githubusercontent.com/u/42201808" alt="avatar" class="avatar"> -->
-            <img src="images/avatar.png" alt="avatar" class="avatar">
-            <p class="paragraph">
-                <b>I am just a hobbyist coder, mainly focused around JavaScript and C#.</b> I am a big fan of Discord and I use it frequently. Hours put in writing stories with my friends resulted in me needing something better than built-in markdown syntax preview in Discord. That's how Discord Previewer was born - a simple application made in Electron, which helped me to easy import text already containing Markdown syntaxes and preview it real-time, along with editing the content and later exporting it as ready-to-paste text. After finishing the first versions of my application, I immediately found JS as my new favorite programming language. I decided to study it further, also learning both HTML and CSS in the process.
-            </p>
+                <img src="/public/img/logo.png" alt="logo" class="w-48">
+                <p class="text-4xl lg:text-5xl">Portfolio Page</p>
+            </section>
+
+            <section class="h-screen flex flex-row pt-6 pl-6 pr-6 lg:pl-24 lg:pr-24 lg:pt-24 gap-24">
+                <img src="/public/img/logo.png" alt="logo" class="w-52 self-center hidden lg:inline">
+                <div class="flex flex-col gap-4">
+                    <p class="font-semibold text-3xl">Introduction
+                        <a class="relative block top-[-9rem] invisible" id="introduction"></a>
+                    </p>
+                    <p class="text-sm lg:text-lg text-gray-300">Hello, I’m Sebastian.<br><br>
+    
+                        I’m an aspiring web developer, who seeks his first job in IT. I’ve finished top technical college in Poland (SCI) and I’m currently looking for a place, where I could transform my programming knowledge and skills into real work experience. I’m interested with both frontend and backend programming.<br><br>
+                        
+                        I want to learn the industry standards and write high quality code, which would allow me to create more complex and interesting projects.<br><br>
+                        
+                        I’ve built this website to share my current knowledge and all projects I made in my free time. I consider programming as the most entertaining hobby I could’ve ever found, which eventually allowed me to turn it into real work.<br><br>
+                        
+                        List of technologies I’ve learned and continue to use/learn:
+                    </p>
+                    <img src="/public/img/techstack.svg" alt="techstack" class="w-full lg:w-2/5">
+                </div>
+            </section>
+
+            <section class="min-h-screen flex flex-col p-6 pb-16 lg:pr-24 lg:pl-24 gap-6 2xl:gap-20 lg:justify-center">
+                <p class="font-semibold text-3xl">Projects
+                    <a class="relative block top-[-6rem] invisible" id="projects"></a>
+                </p>
+                <div class="flex flex-col lg:flex-row w-full gap-6 lg:gap-10">
+                    <div class="bg-old-blurple lg:w-80 flex flex-col items-center p-3 lg:pb-16 pb-8">
+                        <a href="https://github.com/Sevelar/Discord-Previewer" class="self-end">
+                            <img src="/public/img/github-black.svg" alt="" class="h-8 opacity-20">
+                        </a>
+                        <img src="/public/img/dispreview-logotype.png" alt="dispreview-logotype" class="h-20 lg:h-32 mb-4">
+                        <img src="/public/img/dispreview-logo.svg" alt="dispreview-logo" class="w-64 mb-4">
+                        <p class="text-center text-sm pr-2 pl-2">Discord Previewer is a live-preview markdown text editor, made in Node.js and Electron. It supports features like custom avatars, custom nicknames and role colors. It was my first attempt at making such application.<br>
+                            Eventually I abandoned it in favor of DisViewer.</p>
+                    </div>
+                    <div class="bg-new-blurple lg:w-80 flex flex-col items-center p-3 pb-8">
+                        <a href="https://github.com/Sevelar/DisViewer" class="self-end">
+                            <img src="/public/img/github-black.svg" alt="" class="h-8 opacity-20">
+                        </a>
+                        <img src="/public/img/disviewer-logotype.svg" alt="" class="h-20 lg:h-32 mb-4">
+                        <img src="/public/img/disviewer-logo.svg" alt="" class="w-64 mb-4">
+                        <p class="text-center text-sm pr-2 pl-2">DisViewer is a reworked version of Discord Previewer. Instead of using the pure JavaScript, I chose React as UI framework for such project. Made from scratch, featuring completely refreshed CSS and improved performance<br>
+                            Still in development.</p>
+                    </div>
+                    <div class="bg-astron lg:w-80 flex flex-col items-center p-3 pb-8">
+                        <img src="/public/img/github-white.svg" alt="" class="h-8 opacity-20 self-end mb-2">
+                        <img src="/public/img/astron-logotype.svg" alt="" class="h-20 lg:h-28 mb-4">
+                        <img src="/public/img/astron-logo.svg" alt="" class="w-40 mb-4">
+                        <p class="text-center text-[0.8rem] pr-1 pl-1">Astron is my main goal. A full-blown chat application with various features. Instant messaging, voice calling, customizations and a lot more. I wish that one day Astron could become a big service, giving some freshness on a market. However it’s a far goal, so the initial release of Astron is intended to be self-hosted. As for now, I’m working on a proof-of-concept demo, which is going to be public.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="flex justify-center items-center fixed bottom-0 h-4 w-full mb-4 text-gray-600 text-xs">last updated (06/07/2022)</div>
         </div>
     </div>
 </body>
