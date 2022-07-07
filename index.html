@@ -8,9 +8,9 @@
     <title>@ Sevelar - Portfolio</title>
 </head>
 <body>
-    <div class="bg-background bg-[length:100%] bg-fixed h-full">
-        <div class="bg-darkmask bg- bg-fixed h-full">
-            <div class="flex flex-row h-14 w-full justify-center items-center gap-28 fixed top-0 font-saira">
+    <div class="bg-background bg-center bg-cover lg:bg-[length:100%] lg:bg-fixed h-full">
+        <div class="bg-darkmask bg-fixed h-full">
+            <div class="flex-row h-14 w-full hidden lg:flex justify-center items-center gap-28 fixed top-0 font-saira">
                 <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Home</span>
                 <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Introduction</span>
                 <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Projects</span>
@@ -18,16 +18,16 @@
             </div>
 
             <section class="h-screen flex flex-col items-center justify-around pt-12 pb-12">
-                <p class="text-5xl">Sebastian Wróbel</p>
+                <p class="text-4xl lg:text-5xl">Sebastian Wróbel</p>
                 <img src="/public/img/logo.png" alt="logo" class="w-48">
-                <p class="text-5xl">Portfolio Page</p>
+                <p class="text-4xl lg:text-5xl">Portfolio Page</p>
             </section>
 
-            <section class="h-screen flex flex-row pl-24 pr-24 pt-24 gap-24">
-                <img src="/public/img/logo.png" alt="logo" class="w-52 h-52 self-center">
+            <section class="h-screen flex flex-row pt-6 pl-6 pr-6 lg:pl-24 lg:pr-24 lg:pt-24 gap-24">
+                <img src="/public/img/logo.png" alt="logo" class="w-52 self-center hidden lg:inline">
                 <div class="flex flex-col gap-4">
                     <p class="font-semibold text-3xl">Introduction</p>
-                    <p class="text-lg text-gray-300">Hello, I’m Sebastian.<br><br>
+                    <p class="text-sm lg:text-lg text-gray-300">Hello, I’m Sebastian.<br><br>
     
                         I’m an aspiring web developer, who seeks his first job in IT. I’ve finished top technical college in Poland (SCI) and I’m currently looking for a place, where I could transform my programming knowledge and skills into real work experience. I’m interested with both frontend and backend programming.<br><br>
                         
@@ -37,34 +37,34 @@
                         
                         List of technologies I’ve learned and continue to use/learn:
                     </p>
-                    <img src="/public/img/techstack.svg" alt="techstack" class="w-2/5">
+                    <img src="/public/img/techstack.svg" alt="techstack" class="w-full lg:w-2/5">
                 </div>
             </section>
 
-            <section class="h-screen flex flex-col pt-24 pr-24 pl-24 pb-14 gap-4">
-                <p class="font-semibold text-3xl mb-10">Projects</p>
-                <div class="flex flex-row w-full gap-10">
-                    <div class="bg-old-blurple w-80 flex flex-col items-center p-3 pb-16">
+            <section class="min-h-screen flex flex-col p-6 pb-16 lg:pr-24 lg:pl-24 gap-6 2xl:gap-20 lg:justify-center">
+                <p class="font-semibold text-3xl">Projects</p>
+                <div class="flex flex-col lg:flex-row w-full gap-6 lg:gap-10">
+                    <div class="bg-old-blurple lg:w-80 flex flex-col items-center p-3 lg:pb-16 pb-8">
                         <a href="https://github.com/Sevelar/Discord-Previewer" class="self-end">
                             <img src="/public/img/github-black.svg" alt="" class="h-8 opacity-20">
                         </a>
-                        <img src="/public/img/dispreview-logotype.png" alt="dispreview-logotype" class="h-32 mb-4">
+                        <img src="/public/img/dispreview-logotype.png" alt="dispreview-logotype" class="h-20 lg:h-32 mb-4">
                         <img src="/public/img/dispreview-logo.svg" alt="dispreview-logo" class="w-64 mb-4">
                         <p class="text-center text-sm pr-2 pl-2">Discord Previewer is a live-preview markdown text editor, made in Node.js and Electron. It supports features like custom avatars, custom nicknames and role colors. It was my first attempt at making such application.<br>
                             Eventually I abandoned it in favor of DisViewer.</p>
                     </div>
-                    <div class="bg-new-blurple w-80 flex flex-col items-center p-3">
+                    <div class="bg-new-blurple lg:w-80 flex flex-col items-center p-3 pb-8">
                         <a href="https://github.com/Sevelar/DisViewer" class="self-end">
                             <img src="/public/img/github-black.svg" alt="" class="h-8 opacity-20">
                         </a>
-                        <img src="/public/img/disviewer-logotype.svg" alt="" class="h-32 mb-4">
+                        <img src="/public/img/disviewer-logotype.svg" alt="" class="h-20 lg:h-32 mb-4">
                         <img src="/public/img/disviewer-logo.svg" alt="" class="w-64 mb-4">
                         <p class="text-center text-sm pr-2 pl-2">DisViewer is a reworked version of Discord Previewer. Instead of using the pure JavaScript, I chose React as UI framework for such project. Made from scratch, featuring completely refreshed CSS and improved performance<br>
                             Still in development.</p>
                     </div>
-                    <div class="bg-astron w-80 flex flex-col items-center p-3">
+                    <div class="bg-astron lg:w-80 flex flex-col items-center p-3 pb-8">
                         <img src="/public/img/github-white.svg" alt="" class="h-8 opacity-20 self-end mb-2">
-                        <img src="/public/img/astron-logotype.svg" alt="" class="h-28 mb-4">
+                        <img src="/public/img/astron-logotype.svg" alt="" class="h-20 lg:h-28 mb-4">
                         <img src="/public/img/astron-logo.svg" alt="" class="w-40 mb-4">
                         <p class="text-center text-[0.8rem] pr-1 pl-1">Astron is my main goal. A full-blown chat application with various features. Instant messaging, voice calling, customizations and a lot more. I wish that one day Astron could become a big service, giving some freshness on a market. However it’s a far goal, so the initial release of Astron is intended to be self-hosted. As for now, I’m working on a proof-of-concept demo, which is going to be public.</p>
                     </div>
