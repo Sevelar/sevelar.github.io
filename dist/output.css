@@ -558,8 +558,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
+}
+
+.relative {
+  position: relative;
 }
 
 .top-0 {
@@ -568,6 +576,26 @@ video {
 
 .bottom-0 {
   bottom: 0px;
+}
+
+.top-\[-250px\] {
+  top: -250px;
+}
+
+.top-\[-200px\] {
+  top: -200px;
+}
+
+.top-\[-1\.5rem\] {
+  top: -1.5rem;
+}
+
+.top-\[-6rem\] {
+  top: -6rem;
+}
+
+.top-\[-12rem\] {
+  top: -12rem;
 }
 
 .mb-10 {
@@ -584,6 +612,10 @@ video {
 
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {

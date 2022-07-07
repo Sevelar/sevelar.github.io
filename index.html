@@ -11,14 +11,17 @@
     <div class="bg-background bg-center bg-cover lg:bg-[length:100%] lg:bg-fixed h-full">
         <div class="bg-darkmask bg-fixed h-full">
             <div class="flex-row h-14 w-full hidden lg:flex justify-center items-center gap-28 fixed top-0 font-saira">
-                <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Home</span>
-                <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Introduction</span>
-                <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Projects</span>
+                <a href="#home" class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Home</a>
+                <a href="#introduction" class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Introduction</a>
+                <a href="#projects" class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Projects</a>
                 <span class="text-white hover:text-green-50 hover:custom-text-shadow hover:shadow-green-500 cursor-pointer">Socials</span>
             </div>
 
             <section class="h-screen flex flex-col items-center justify-around lg:pt-12 pb-12">
-                <p class="text-4xl lg:text-5xl">Sebastian Wróbel</p>
+                <p class="text-4xl lg:text-5xl">
+                    Sebastian Wróbel
+                    <a class="relative block top-[-250px] invisible" id="home"></a>
+                </p>
                 <img src="/public/img/logo.png" alt="logo" class="w-48">
                 <p class="text-4xl lg:text-5xl">Portfolio Page</p>
             </section>
@@ -26,7 +29,9 @@
             <section class="h-screen flex flex-row pt-6 pl-6 pr-6 lg:pl-24 lg:pr-24 lg:pt-24 gap-24">
                 <img src="/public/img/logo.png" alt="logo" class="w-52 self-center hidden lg:inline">
                 <div class="flex flex-col gap-4">
-                    <p class="font-semibold text-3xl">Introduction</p>
+                    <p class="font-semibold text-3xl">Introduction
+                        <a class="relative block top-[-12rem] invisible" id="introduction"></a>
+                    </p>
                     <p class="text-sm lg:text-lg text-gray-300">Hello, I’m Sebastian.<br><br>
     
                         I’m an aspiring web developer, who seeks his first job in IT. I’ve finished top technical college in Poland (SCI) and I’m currently looking for a place, where I could transform my programming knowledge and skills into real work experience. I’m interested with both frontend and backend programming.<br><br>
@@ -42,7 +47,9 @@
             </section>
 
             <section class="min-h-screen flex flex-col p-6 pb-16 lg:pr-24 lg:pl-24 gap-6 2xl:gap-20 lg:justify-center">
-                <p class="font-semibold text-3xl">Projects</p>
+                <p class="font-semibold text-3xl">Projects
+                    <a class="relative block top-[-12rem] invisible" id="projects"></a>
+                </p>
                 <div class="flex flex-col lg:flex-row w-full gap-6 lg:gap-10">
                     <div class="bg-old-blurple lg:w-80 flex flex-col items-center p-3 lg:pb-16 pb-8">
                         <a href="https://github.com/Sevelar/Discord-Previewer" class="self-end">
