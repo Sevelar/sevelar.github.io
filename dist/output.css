@@ -1078,6 +1078,10 @@ body {
     padding-bottom: 4rem;
   }
 
+  .lg\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .lg\:text-5xl {
     font-size: 54px;
   }
