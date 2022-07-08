@@ -8,7 +8,7 @@ module.exports = {
       },
       backgroundColor: {
         darkmask: "rgba(0, 0, 0, 0.8)",
-        "new-blurple": "#7289DA",
+        "new-blurple": "#5865F2",
         "old-blurple": "#5E6EA8",
         astron: "#333333",
       },
